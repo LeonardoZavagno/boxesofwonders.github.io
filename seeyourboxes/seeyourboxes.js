@@ -28,7 +28,7 @@ const isMetaMaskInstalled = async () => {
 
 const isPolygonNetwork = async () => {
     const chainId = await window.web3.eth.getChainId()
-        return Boolean(chainId && chainId === POLYGON_MAINNET)
+    return Boolean(chainId && chainId === POLYGON_MAINNET)
 }
 
 const removeAllNfts = () => {
